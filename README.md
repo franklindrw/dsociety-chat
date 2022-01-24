@@ -54,5 +54,5 @@ Entre em contato!</p>
 
 ## 📋 Licença
 
-<p> Copyright 2021 © Franklin Campos </br>
+<p> Copyright 2022 © Franklin Campos </br>
 This project is MIT licensed.</p>
