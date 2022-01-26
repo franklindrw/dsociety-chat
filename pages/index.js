@@ -1,36 +1,7 @@
 import { Box, Button, Text, TextField, Image } from "@skynexui/components";
+import React from "react";
 import appConfig from "../config.json";
-
-function GlobalStyle() {
-    return (
-        <style global jsx>{`
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                list-style: none;
-            }
-            body {
-                font-family: "Open Sans", sans-serif;
-            }
-            /* App fit Height */
-            html,
-            body,
-            #__next {
-                min-height: 100vh;
-                display: flex;
-                flex: 1;
-            }
-            #__next {
-                flex: 1;
-            }
-            #__next > * {
-                flex: 1;
-            }
-            /* ./App fit Height */
-        `}</style>
-    );
-}
+import { useRouter } from "next/router";
 
 function Titulo(props) {
     const Tag = props.tag || "h1";
@@ -65,17 +36,18 @@ function Titulo(props) {
 // export default HomePage;
 
 export default function PaginaInicial() {
-    const username = "franklindrw";
+    // const username = "franklindrw";
+    const [username, setUsername] = React.useState("franklindrw");
+    const roteamento = useRouter();
 
     return (
         <>
-            <GlobalStyle />
             <Box
                 styleSheet={{
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    backgroundColor: appConfig.theme.colors.primary["000"],
+                    backgroundColor: appConfig.theme.colors.neutrals[505],
                     backgroundImage:
                         "url('https://www.wallpaperup.com/uploads/wallpapers/2014/03/11/295839/105e7243080e78fd2589d0615346e763.jpg')",
                     backgroundRepeat: "no-repeat",
@@ -93,7 +65,7 @@ export default function PaginaInicial() {
                             sm: "row",
                         },
                         width: "100%",
-                        maxWidth: "500px",
+                        maxWidth: "600px",
                         borderRadius: "25px",
                         padding: "32px",
                         margin: "16px",
@@ -104,6 +76,10 @@ export default function PaginaInicial() {
                     {/* Formulário */}
                     <Box
                         as="form"
+                        onSubmit={function (infosDoEvento) {
+                            infosDoEvento.preventDefault();
+                            roteamento.push("/chat");
+                        }}
                         styleSheet={{
                             display: "flex",
                             flexDirection: "column",
@@ -126,6 +102,11 @@ export default function PaginaInicial() {
                         </Text>
 
                         <TextField
+                            value={username}
+                            onChange={function (event) {
+                                const valor = event.target.value;
+                                setUsername(valor);
+                            }}
                             fullWidth
                             textFieldColors={{
                                 neutral: {
@@ -134,7 +115,7 @@ export default function PaginaInicial() {
                                     mainColor:
                                         appConfig.theme.colors.neutrals[500],
                                     mainColorHighlight:
-                                        appConfig.theme.colors.primary[500],
+                                        appConfig.theme.colors.primary[505],
                                     backgroundColor:
                                         appConfig.theme.colors.neutrals[800],
                                 },
@@ -146,12 +127,12 @@ export default function PaginaInicial() {
                             fullWidth
                             buttonColors={{
                                 contrastColor:
-                                    appConfig.theme.colors.neutrals["000"],
-                                mainColor: appConfig.theme.colors.primary[900],
+                                    appConfig.theme.colors.neutrals[100],
+                                mainColor: appConfig.theme.colors.neutrals[506],
                                 mainColorLight:
-                                    appConfig.theme.colors.primary[400],
+                                    appConfig.theme.colors.primary[505],
                                 mainColorStrong:
-                                    appConfig.theme.colors.primary[600],
+                                    appConfig.theme.colors.primary[505],
                             }}
                         />
                     </Box>
@@ -168,7 +149,7 @@ export default function PaginaInicial() {
                             backgroundColor:
                                 appConfig.theme.colors.neutrals[800],
                             border: "1px solid",
-                            borderColor: appConfig.theme.colors.neutrals[500],
+                            borderColor: appConfig.theme.colors.neutrals[506],
                             borderRadius: "10px",
                             flex: 1,
                             minHeight: "240px",
