@@ -9,7 +9,7 @@
   </div>
 </div>
 
-<h1 align="center"> Dark Society </h1>
+<h1 align="center"> Dark Society chat </h1>
 
 <div id="statusProject" align="center">
  <img src="https://img.shields.io/github/license/franklindrw/Aluraflix.svg?style=for-the-badge" />
