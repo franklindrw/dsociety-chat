@@ -16,26 +16,26 @@
  <img src="https://img.shields.io/github/stars/franklindrw/Aluraflix.svg?style=for-the-badge" />
  <img src="https://img.shields.io/github/forks/franklindrw/Aluraflix.svg?style=for-the-badge" />
  <img src="https://img.shields.io/github/issues/franklindrw/Aluraflix.svg?style=for-the-badge" />
- <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=yellow&style=for-the-badge"/>
+ <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=green&style=for-the-badge"/>
  </div>
  
  
-<h4 align="center"> Página de chat desenvolvida com React inspirada na série Mr. Robot e a plataforma de chat Discord. Feito com base das aulas de Imersão React 4 Alura 2022. </h4>
-<br /> <br />
-  
-<h1 align="center"> 
-    :construction:  Projeto em construção  :construction:
-</h1>
+<h4 align="center"> Página de chat desenvolvido com React inspirado na série Mr. Robot e a plataforma de chat Discord. Feito com base das aulas de Imersão React 4 Alura 2022. </h4>
 <br /> <br />
 
 
 <h2>Sobre o Projeto</h2>
 
-<p>A página foi criada a partir do desafio da Imersão React 4 Alura, onde iremos criar uma página de chat baseada na plataforma Discord</p>
+<p>A página foi criada a partir do desafio da Imersão React 4 Alura, onde criamos uma página de chat baseada na plataforma Discord</p>
 
-<br /> <br />
- 
-## Autor
+<br />
+  
+![dark_society1](https://user-images.githubusercontent.com/81038899/151618572-f65617d9-6c9a-4252-88b6-8354a6dac8ce.png)
+![dark_society2](https://user-images.githubusercontent.com/81038899/151618599-c29a80c2-0a78-49ef-9f07-ca12607e0e8b.png)
+
+<br />
+  
+### Autor
 
 <a href="https://github.com/franklindrw">
     <img style="border-radius: 50%; width: 100px" src="https://github.com/franklindrw.png" alt="Foto do Autor"/>
