@@ -26,7 +26,7 @@
 | :placard: Vitrine.Dev | https://cursos.alura.com.br/vitrinedev/franklindrw |
 | -------------  | --- |
 | :sparkles: Nome        |  Dark Society chat
-| :label: Tecnologias | React
+| :label: Tecnologias | React, Javascript
 | :rocket: URL         | 
 | :fire: Desafio     | Página de chat desenvolvido com React inspirado na série Mr. Robot e a plataforma de chat Discord. Feito com base das aulas de Imersão React 4 Alura 2022.
 
